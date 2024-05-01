@@ -15,7 +15,7 @@
 #include "HPS_I2C/HPS_I2C.h"
 #include "FPGA_PIO/FPGA_PIO.h"
 #include "Util/macros.h"
-#include "backgroundAudio.h"
+#include "shotAudio.h"
 
 
 //Include Floating Point Math Libraries
@@ -66,8 +66,8 @@ int main(void) {
         FPGA_PIO_setOutput(leds, space, UINT32_MAX);
         //If there is space in the write FIFO for both channels:
         if (space > 0) {
-            // Read a sample from the background audio array and write it to both channels
-        	sample = 24*backgroundAudio[sampleIndex];
+            // Read a sample from the shot audio array and write it to both channels
+        	sample = 24*shotAudio[sampleIndex];
             WM8731_writeSample(audio, sample, sample);
 
             // Increment sample index and handle looping

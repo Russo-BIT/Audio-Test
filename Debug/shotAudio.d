@@ -1,0 +1,1 @@
+shotAudio.o: ..\shotAudio.c

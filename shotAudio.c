@@ -1,7 +1,7 @@
 //Audio data in the form of a C array. The audio samples are represented as 16-bit signed integers.
 //Sampling rate: 11025 Hz
 
-const signed int backgroundAudio [4080] = 
+const signed int shotAudio [4080] = 
 {256,-7424,-6400,9216,22015,256,-24831,-5888,19455,-2560,
 -18687,-9216,3072,24831,6144,-17151,-11264,6656,14336,-6912,
 -13568,256,20735,1792,-20735,-8704,-768,20223,9728,-14336,
